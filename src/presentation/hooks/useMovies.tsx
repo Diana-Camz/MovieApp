@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react"
-import { Movie } from "../../core/entities/movie.entity"
+import type { Movie } from "../../core/entities/movie.entity"
 import * as useCases from '../../core/use-cases'
 import { movieDBFetcher } from "../../config/adapters/movieDB.adapter"
 
-const useMovies = () => {
+
+let popularPage= 1;
+
+export const useMovies = () => {
     const [isLoading, setIsLoading] = useState(true)
     const [nowPlaying, setNowPlaying] = useState<Movie[]>([])
     const [popular, setpopular] = useState<Movie[]>([])
@@ -42,7 +45,7 @@ const useMovies = () => {
         setTopRated(topRatedMovies);
         setupcoming(upcomingMovies)
         setIsLoading(false)
-
+    }
 
         return {
             isLoading, 
@@ -50,8 +53,14 @@ const useMovies = () => {
             popular,
             topRated,
             upcoming,
+
+            //Methods
+            popularNextPage: async() => {
+                popularPage++;
+                const popularMovies = await useCases.moviesPopularUseCase(movieDBFetcher, {
+                    page: popularPage,
+                });
+                setpopular(prev => [...prev, ...popularMovies]);
+            }
         }
     }
-}
-
-export default useMovies
