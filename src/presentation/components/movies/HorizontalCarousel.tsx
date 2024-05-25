@@ -1,8 +1,8 @@
 import { NativeSyntheticEvent, NativeScrollEvent, StyleSheet, Text, View,  } from 'react-native'
 import React, {useEffect, useRef} from 'react'
-import { Movie } from '../../core/entities/movie.entity'
 import { FlatList } from 'react-native-gesture-handler';
 import MoviePoster from './MoviePoster';
+import { Movie } from '../../../core/entities/movie.entity';
 
 interface Props {
     movies: Movie[];
