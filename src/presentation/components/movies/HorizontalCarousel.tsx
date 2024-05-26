@@ -56,7 +56,7 @@ export default HorizontalCarousel
 const styles = StyleSheet.create({
     title: {
         fontSize: 20,
-        fontWeight: '300',
+        fontWeight: '500',
         marginLeft: 10,
         paddingBottom: 10,
         color: '#444444',

@@ -23,7 +23,7 @@ const MovieDetails = ({movie, cast}:Props) => {
         <Text style={styles.title}>Budget</Text>
         <Text style={styles.description}>{Formatter.currency(movie.budget)} USD</Text>
       </View>
-      <View style={{marginHorizontal: 20, marginBottom: 50,}}>
+      <View style={{marginHorizontal: 20, marginBottom: 5,}}>
         <Text style={styles.title}>Cast</Text>
         <FlatList
         data={cast}

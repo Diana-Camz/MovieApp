@@ -12,7 +12,8 @@ interface Props {
 
 const PosterCarousel = ({height = 440, movies}:Props) => {
   return (
-    <View style={{height}}>
+    <View style={{height, marginBottom: 30,}}>
+      <Text style={styles.title}>Now Playing</Text>
       <ScrollView
       horizontal
       showsVerticalScrollIndicator={false}>
@@ -21,11 +22,8 @@ const PosterCarousel = ({height = 440, movies}:Props) => {
         key={movie.id}
         movie={movie}
         />
-        
       ))
-        
         }
-        
       </ScrollView>
     </View>
   )
@@ -35,6 +33,10 @@ export default PosterCarousel
 
 const styles = StyleSheet.create({
     title:{
-        color: '#444444',
+      fontSize: 20,
+      fontWeight: '500',
+      marginLeft: 10,
+      paddingBottom: 10,
+      color: '#444444',
     }
 })
