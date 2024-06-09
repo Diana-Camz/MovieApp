@@ -25,8 +25,8 @@ Clone .env.template file to .env and add your environment variables
 ## Screenshots
 
 <img src='https://github.com/Diana-Camz/MovieApp/assets/89281129/eecde1c1-ce64-4454-be1e-4bfb4ee1b6be' width="280" height="600">
-<img src='https://github.com/Diana-Camz/MovieApp/assets/89281129/96e632a3-dc9f-4b4e-912f-3c77a8eb04dc' width="300" height="600">
-<img src='https://github.com/Diana-Camz/MovieApp/assets/89281129/a865294b-aa78-496f-9760-835d9efd1556' width="300" height="600">
+<img src='https://github.com/Diana-Camz/MovieApp/assets/89281129/96e632a3-dc9f-4b4e-912f-3c77a8eb04dc' width="280" height="600">
+<img src='https://github.com/Diana-Camz/MovieApp/assets/89281129/a865294b-aa78-496f-9760-835d9efd1556' width="280" height="600">
 
 
 
