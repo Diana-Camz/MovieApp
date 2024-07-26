@@ -13,7 +13,7 @@ This is an activity created in the Udemy-Course of Fernando Herrera.
 
 You can clone this repository 
 ```bash
-  git@github.com:Diana-Camz/cookBook.git
+  git@github.com:Diana-Camz/MovieApp.git
 ```
 and run the project with
 ```bash
